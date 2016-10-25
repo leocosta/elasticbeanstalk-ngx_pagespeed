@@ -33,8 +33,8 @@ touch /usr/local/nginx/conf/nginx.conf
 touch /usr/local/nginx/conf/webapp.conf
 touch /etc/init.d/nginx
 
-wget https://raw.githubusercontent.com/leocosta/elasticbeanstalk-ngx_pagespeed/master/conf/nginx/eb-nginx.conf -O /usr/local/nginx/conf/nginx.conf
-# wget https://raw.githubusercontent.com/leocosta/elasticbeanstalk-ngx_pagespeed/master/conf/nginx/nginx.conf -O /usr/local/nginx/conf/nginx.conf
+# wget https://raw.githubusercontent.com/leocosta/elasticbeanstalk-ngx_pagespeed/master/conf/nginx/eb-nginx.conf -O /usr/local/nginx/conf/nginx.conf
+wget https://raw.githubusercontent.com/leocosta/elasticbeanstalk-ngx_pagespeed/master/conf/nginx/nginx.conf -O /usr/local/nginx/conf/nginx.conf
 # wget https://raw.githubusercontent.com/leocosta/elasticbeanstalk-ngx_pagespeed/master/conf/nginx/webapp.conf -O /usr/local/nginx/conf/webapp.conf
 wget https://raw.githubusercontent.com/leocosta/elasticbeanstalk-ngx_pagespeed/master/conf/nginx/nginx.init.txt -O /etc/init.d/nginx
 
