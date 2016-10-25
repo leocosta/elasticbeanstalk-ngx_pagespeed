@@ -29,14 +29,13 @@ make install
 cd
 
 # Download the Nginx configuration files
-mkdir -p /usr/local/nginx/conf
-touch /usr/local/nginx/conf/nginx.conf
-touch /usr/local/nginx/conf/webapp.conf
+touch /etc/nginx/conf/nginx.conf
+touch /etc/nginx/conf/webapp.conf
 touch /etc/init.d/nginx
 
 # wget https://raw.githubusercontent.com/leocosta/elasticbeanstalk-ngx_pagespeed/master/conf/nginx/eb-nginx.conf -O /usr/local/nginx/conf/nginx.conf
-wget https://raw.githubusercontent.com/leocosta/elasticbeanstalk-ngx_pagespeed/master/conf/nginx/nginx.conf -O /usr/local/nginx/conf/nginx.conf
-wget https://raw.githubusercontent.com/leocosta/elasticbeanstalk-ngx_pagespeed/master/conf/nginx/webapp.conf -O /usr/local/nginx/conf/webapp.conf
+wget https://raw.githubusercontent.com/leocosta/elasticbeanstalk-ngx_pagespeed/master/conf/nginx/nginx.conf -O /etc/nginx/conf/nginx.conf
+wget https://raw.githubusercontent.com/leocosta/elasticbeanstalk-ngx_pagespeed/master/conf/nginx/webapp.conf -O /etc/nginx/conf/webapp.conf
 wget https://raw.githubusercontent.com/leocosta/elasticbeanstalk-ngx_pagespeed/master/conf/nginx/nginx.init.txt -O /etc/init.d/nginx
 
 chmod +x /etc/init.d/nginx
