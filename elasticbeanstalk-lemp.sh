@@ -29,6 +29,7 @@ make install
 cd
 
 # Download the Nginx configuration files
+mkdir -p /usr/local/nginx/conf
 touch /usr/local/nginx/conf/nginx.conf
 touch /usr/local/nginx/conf/webapp.conf
 touch /etc/init.d/nginx
