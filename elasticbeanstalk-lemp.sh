@@ -28,6 +28,9 @@ make
 make install
 cd
 
+ln -sf /usr/local/nginx/conf/ /etc/nginx
+ln -sf /usr/local/nginx/sbin/nginx /usr/sbin/nginx
+
 # Download the Nginx configuration files
 mkdir -p /var/lib/nginx/tmp/client_body
 mkdir -p /usr/local/nginx/conf
